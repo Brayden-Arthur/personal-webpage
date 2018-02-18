@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="images/AbilitySmall.png">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/classic.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
 
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -30,110 +30,259 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
+            <li><a href="brayden_arthur_resume.pdf" download><span class="glyphicon glyphicon-download"></span> Download Resume</a></li>
+
             <li><a href="resume.html">Resume</a></li>
-            <li><a href="software.html">Software</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Interests <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="other.html">Photography</a></li>
-                <li><a href="other.html">Falconry</a></li>
-                <li><a href="other.html">Fencing</a></li>
-              </ul>
-              <!-- <li><a href="other.html">Other Interests</a></li> have dropdown include photography, falconry, art, etc.-->
-            </ul>
-          </div>
-        </div><!-- fluid -->
-        <hr/>
-      </div><!-- navbar -->
+            <!-- <li><a href="other.html">Other Interests</a></li> have dropdown include photography, falconry, art, etc.-->
+          </ul>
+        </div>
+      </div><!-- fluid -->
+      <hr/>
+    </div><!-- navbar -->
 
 
-      <div class="container-fluid" name="content">
-        <div class="col-md-6" name="work">
-          <h2>Work History</h2>
-          <br/>
-          <div class="panel panel-default" name="Used.ca">
-            <div class="panel-heading">Used.ca</div>
-            <div class="panel-body">From February to August 2017 I was a full stack developer at <a href="used.ca">Used.ca</a>. My primary task was the development of an administrative back end for their platform. </div>
+    <div class="container-fluid" name="content">
+      <div class="col-md-4">
+        <h2>Work history</h2>
+        <div class="work well" links="mongodb elastic postgres flask Agile jQuery">
+          <h4><a href="https://www.used.ca/">Used.ca</a> - Full Stack Developer</h4> <!-- add a one line description of company -->
+          <p>
+            At Used.ca I created a tool for the administration of advertisements for use by employees, and assisted with a the development and implementation of a new codebase. The administrative tool was created using Flask, MongoDB, on an ELK stack for simple searching and logging of advertisements. The new codebase was build using primarily Django.
+          </p>
+        </div>
+        <div class="work well" links="Agile test-driven-development">
+          <h4><a href="https://www.eventbase.com/">Eventbase</a> - QA Analyst</h4>
+          <p>
+            My work at Eventbase was focused on ensuring the quality of the applications that were being delivered to events like SXSW, and CES. Testing was done in Android, iOS, and Windows Phone environments.
+          </p>
           </div>
-          <div class="panel panel-default" name="Eventbase">
-            <div class="panel-heading">Eventbase</div>
-            <div class="panel-body">I worked as a Quality Assurance Analyst Coop for <a href="https://www.eventbase.com/">Eventbase Technology</a>. I performed testing on their mobile platform to ensure the quality of the applications meet acceptance criteria.</div>
-          </div>
-          <!-- <img class="rounded" src="images/AbilitySmall.png"></img>  -->
-          <div class="panel panel-default" name="UVic">
-            <div class="panel-heading">University of Victoria</div>
-            <div class="panel-body">I worked under a professor of Humanities, Stephen Ross, to help create a database and web-front for the <a href="http://linkedmods.uvic.ca/">Linked Modernisms Project</a>. </div>
-          </div>
-          <div class="panel panel-default" name="solaris">
-            <div class="panel-heading">Solaris MCI</div>
-            <div class="panel-body">I worked with <a href="solaris-mci.com">Solaris</a> to update their asset tracking database as well as perform general tech support duties.</div>
-          </div>
-
-          </div>
-
-
-          <div class="col-md-6">
-            <h2>Software Skills</h2>
-            <br/>
-            <div class="container-fluid">
-              <ul>
-                <li>Scripting Languages
-                  <ul>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                  </ul>
-                </li>
-                <li>Compiled Languages
-                  <ul>
-                    <li>Java</li>
-                  </ul>
-                </li>
-                <li>Database Languages
-                  <ul>
-                    <li>SQL</li>
-                  </ul>
-                </li>
-                <li>Basic Computer Proficiencies
-                  <ul>
-                    <li>Microsoft Word, Excel, Powerpoint</li>
-                    <li>Windows, OSX, CentOS, Ubuntu</li>
-                  </ul>
-                </li>
-                <li>Software Engineering Skills
-                  <ul>
-                    <li>Agile Development</li>
-                    <li>Security Engineering</li>
-                    <li>Data Analytics</li>
-                  </ul>
-                </li>
-              </ul>
-              <br/>
-              <div class="container-fluid">
-                <div name="references">
-                  <h2>References</h2>
-                  <h5>Scott Johnston - Employer</h5>
-                  <p>Scott was the head of development at Used.ca <br/>
-                    email - scott@&zwnj;used.ca <br/>
-                  <h5>Stephen Ross - Employer</h5>
-                  <p>Stephen was my employer at the University of Victoria <br/>
-                    email - saross@&zwnj;uvic.ca <br/>
-                    phone - 250-&zwnj;721-&zwnj;7237</p>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <!-- Put something here -->
+          <div class="work well" links="virtuoso sparql jQuery d3 angular nltk">
+            <h4><a href="https://www.uvic.ca/">University of Victoria</a> - Research Developer</h4>
+            <p>
+              I developed a language processing framework to process encyclopedia entries from the encyclopedia of Modernism, and a web-front to display the relations. The encyclopedia entries needed to be classified into ontological categories and relationships between entities. Using the StanfordNLP library and various Python programs the analyzed entities were deposited into an RDF database. The relations between entities are then viewable and compared on the web front end, <a href="http://linkedmods.uvic.ca/">linkedmods.uvic.ca</a>.
+            </p>
           </div>
         </div>
-      </body>
-      <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        <div class="col-md-4">
+          <h2>Skills</h2>
+          <div class="skill">
+            <ul>
+              <li name="databases" id="databases">Databases
+                <ul>
+                  <li name="nosql" id="nosql">NoSQL
+                    <ul>
+                      <li name="mongodb" id="mongodb">MongoDB</li>
+                      <li name="elastic" id="elastic">Elastic</li>
+                    </ul>
+                  </li>
+                  <li name="relational" id="relational">Relational
+                    <ul>
+                      <li name="postgres" id="postgres">Postgres</li>
+                      <li name="virtuoso" id="virtuoso">Virtuoso</li>
+                      <li name="sparql" id="sparql">Sparql</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="skill">
+            <ul>
+              <li name="web-front-end" id="Web-front-end">Web Front-end
+                <ul>
+                  <li name="javascript" id="javascript">JavaScript
+                    <ul>
+                      <li name="d3" id="d3">D3</li>
+                      <li name="jQuery" id="jQuery">jQuery</li>
+                      <li name="angular" id="angular">Angular</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="skill">
+            <ul>
+              <li name="Web-back-end" id="Web-back-end">Web back-end
+                <ul>
+                  <li name="golang" id="golang">Golang
+                    <ul>
+                      <li name="gorilla" id="gorilla">Gorilla</li>
+                    </ul>
+                  </li>
+                  <li name="python" id="python">Python
+                    <ul>
+                      <li name="flask" id="flask">Flask</li>
+                      <li name="django" id="django">Django</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="skill">
+            <ul>
+              <li name="data Analytics" id="data Analytics">Data Analytics
+                <ul>
+                  <li name="Python" id="Python">Python</li>
+                    <ul>
+                      <li name="numpy" id="numpy">NumPy</li>
+                      <li name="pandas" id="pandas">Pandas</li>
+                      <li name="nltk" id="nltk">nltk</li>
+                      <li name="sklearn" id="sklearn">scikit-learn</li>
+                    </ul>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="skill">
+            <ul>
+              <li name="Methodologies" id="Methodologies">Methodologies
+                <ul>
+                  <li name="Agile" id="Agile">Agile</li>
+                  <li name="test-driven-development" id="test-driven-development">Test-Driven Development</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 scrollable">
+          <h2>Projects</h2>
+          <div class="proj well" links="mongodb gorilla">
+            <h4>Scalable Stock Sales System</h4>
+            <p>
+              This project is a scalable stock sales system interacting with a legacy quote server. The project was built in golang using Docker for deployment, the gorilla package for webserver routing, and mongodb for storage. The project uses RPC for simplified execution and increased transactions per second.
+            </p>
+          </div>
+          <div class="proj well" links="jQuery"> <!-- persistent storage, localstorage,  -->
+            <h4>Innotime</h4>
+            <p>
+              This was a brief project during a programming competition designed for maximizing time management. As a group we implemented note taking, reminders, and calendar functionality using jQuery. We used localstorage as a challenge for all of our data to make the project persistent without internet.
+            </p>
+          </div>
+          <div class="proj well" links="pandas nltk sklearn flask"><!-- multi-layer perceptron  -->
+            <h4>Trumpiness</h4>
+            <p>
+              This project used machine learning on a retrieved twitter dataset to classify the tweets of Donald Trump, Ellen Degeneres, Elon Musk, and Barack Obama. Once classified, a user is able to run example tweet text, or retrieve tweets by id to analyze against the classifier to see how alike their tweet is to our classification.
+            </p>
+          </div>
+          <div class="proj well" links="jQuery">
+            <h4>Personal Website</h4>
+            <p>
+              What you see is what you get.
+            </p>
+          </div>
+        </div>
+      </div>
+    </body>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-82583835-1', 'auto');
-      ga('send', 'pageview');
+    ga('create', 'UA-82583835-1', 'auto');
+    ga('send', 'pageview');
 
-      </script>
+    </script>
+    <script>
+    //active is the state for clicked skills or wells, remove all active on click then repopulate
+    $(function() {
+
+
+      $(".well").hover(well_hover);
+      });
+
+function well_hover(){
+  //check if mobile
+  //if active was clicked clear all active, else clear active and active the current wells links
+  if($(this).hasClass("active")){
+    $(this).removeClass("active")
+  }else{
+    $(".active").each(function(){//"this" in this anonymous function is each dom object with the active tag
+      $(this).removeClass("active")
+      $(this).removeClass("list_important")
+      $(this).addClass("list_unimportant")
+    })
+    $(this).addClass("active")
+  }
+  var links = $(this).attr("links")
+  links_list = links.split(" ")
+  for(i = 0; i < links_list.length;i++){
+    if($("#" + links_list[i]).hasClass("active")){
+      $("#" + links_list[i]).removeClass("active")
+      $("#" + links_list[i]).addClass("list_unimportant")
+      $("#" + links_list[i]).removeClass("list_important")
+    }
+    else{
+      $("#" + links_list[i]).removeClass("list_unimportant")
+      $("#" + links_list[i]).addClass("list_important")
+      $("#" + links_list[i]).addClass("active")
+    }
+  }
+}
+</script>
+
+
+
+
+</html>
+
+
+
+
+
+<!--
+skillset = [
+  {"skill": "databases",
+  "children": [
+    {"skill": "nosql",
+    "children": [
+      {"skill": "mongo"},
+      {"skill": "elastic"}]
+    },
+    {"skill": "relational",
+    "children": [
+      {"skill": "postgres"},
+      {"skill": "virtuoso"},
+      {"skill": "sparql"}]
+    }]
+  },
+  {"skill": "web front-end",
+  "children": [
+    {"skill": "js",
+    "children": [
+      {"skill": "d3"},
+      {"skill": "jQuery"},
+      {"skill": "angular"}]
+    }]
+  },
+  {"skill": "Web back-end",
+  "children": [
+    {"skill": "go",
+    "children": [
+      {"skill": "gorilla"}]
+    },
+    {"skill": "Python",
+    "children": [
+      {"skill": "flask"},
+      {"skill": "django"},
+      {"skill": "pylons"}]
+    }]
+  },
+  {"skill": "data Analytics",
+  "children": [
+    {"skill": "R"},
+    {"skill": "Python"},
+    {"skill": "Java"}]
+  },
+  {"skill": "Methodologies",
+  "children": [
+    {"skill": "Agile"}
+  ]}//"Design","Agile",    tensorflow, docker,
+];
+
+
+
+
+-->
